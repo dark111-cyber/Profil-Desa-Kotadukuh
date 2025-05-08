@@ -1,1 +1,186 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Profil Desa Kotadukuh</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      background: linear-gradient(to bottom, #dfffdc, #eaffea);
+      color: #333;
+    }
+    header, footer {
+      background: linear-gradient(to right, #006400, #228B22);
+      color: white;
+      text-align: center;
+      padding: 30px 20px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+    nav {
+      background: #32CD32;
+      padding: 12px;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    nav a {
+      color: white;
+      margin: 0 20px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+    nav a:hover {
+      color: #003300;
+    }
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      margin-top: 20px;
+    }
+    h2 {
+      color: #2e8b57;
+      border-bottom: 2px solid #ccc;
+      padding-bottom: 5px;
+    }
+    ul {
+      padding-left: 20px;
+      line-height: 1.8;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 15px;
+      margin-top: 15px;
+    }
+    .gallery img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+    iframe {
+      width: 100%;
+      height: 350px;
+      border: 0;
+      border-radius: 10px;
+      margin-top: 10px;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-top: 10px;
+    }
+    input, textarea {
+      padding: 12px;
+      font-size: 1em;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      outline: none;
+    }
+    input:focus, textarea:focus {
+      border-color: #228B22;
+    }
+    button {
+      background-color: #228B22;
+      color: white;
+      padding: 12px;
+      font-size: 1em;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+    button:hover {
+      background-color: #006400;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Desa Kotadukuh</h1>
+    <p>Kecamatan Munjul, Kabupaten Pandeglang, Provinsi Banten</p>
+  </header>
+
+  <nav>
+    <a href="#tentang">Tentang</a>
+    <a href="#struktur">Struktur</a>
+    <a href="#potensi">Potensi</a>
+    <a href="#galeri">Galeri</a>
+    <a href="#peta">Peta</a>
+    <a href="#pengaduan">Pengaduan</a>
+  </nav>
+
+  <div class="container">
+    <section id="tentang">
+      <h2>Tentang Desa</h2>
+      <p>Desa Kotadukuh terletak di Kecamatan Munjul, Kabupaten Pandeglang, Provinsi Banten. Masyarakatnya terkenal ramah dan mayoritas bekerja di bidang pertanian, peternakan, serta UMKM.</p>
+    </section>
+
+    <section id="struktur">
+      <h2>Struktur Pemerintahan Desa Kotadukuh</h2>
+      <ul>
+        <li><strong>Kepala Desa:</strong> CECEP MAHPUDIN, AMa</li>
+        <li><strong>Sekretaris Desa:</strong> ZAENAL ABIDIN</li>
+        <li><strong>Kaur Keuangan:</strong> RISMAYANTI</li>
+        <li><strong>Kepala Dusun:</strong> ERI SUHAERI</li>
+      </ul>
+    </section>
+
+    <section id="potensi">
+      <h2>Potensi Desa</h2>
+      <ul>
+        <li>Pertanian: Padi, Jagung, Ubi</li>
+        <li>Perkebunan: Kelapa, Cengkeh</li>
+        <li>Peternakan: Ayam, Kambing</li>
+        <li>UMKM: Kerajinan bambu, makanan tradisional</li>
+      </ul>
+    </section>
+
+    <section id="galeri">
+      <h2>Galeri Foto Desa Kotadukuh</h2>
+      <div class="gallery">
+        <img src="https://via.placeholder.com/300x200?text=Sawah" alt="Sawah">
+        <img src="https://via.placeholder.com/300x200?text=Kebun+Kelapa" alt="Kebun Kelapa">
+        <img src="https://via.placeholder.com/300x200?text=Kantor+Desa" alt="Kantor Desa">
+        <img src="https://via.placeholder.com/300x200?text=Kegiatan+Warga" alt="Kegiatan Warga">
+      </div>
+    </section>
+
+    <section id="peta">
+      <h2>Lokasi Desa Kotadukuh</h2>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3975.123456789!2d106.234567!3d-6.123456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e423abc12345678%3A0x9abcdef01234567!2sKotadukuh%2C%20Kec.%20Munjul%2C%20Kab.%20Pandeglang!5e0!3m2!1sid!2sid!4v1681234567890!5m2!1sid!2sid" allowfullscreen="" loading="lazy"></iframe>
+    </section>
+
+    <section id="pengaduan">
+      <h2>Form Pengaduan Masyarakat Desa Kotadukuh</h2>
+      <form onsubmit="alert('Pengaduan telah dikirim. Terima kasih!'); return false;">
+        <input type="text" placeholder="Nama Anda" required />
+        <input type="email" placeholder="Email" required />
+        <textarea rows="5" placeholder="Isi Pengaduan Anda..." required></textarea>
+        <button type="submit">Kirim</button>
+      </form>
+    </section>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Pemerintah Desa Kotadukuh</p>
+  </footer>
+
+</body>
+</html>
 
